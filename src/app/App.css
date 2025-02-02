@@ -1,0 +1,27 @@
+.cart{
+    height: 0;
+    overflow: hidden;
+    overflow-y: auto;
+}
+@keyframes slideDown {
+    from{
+        height: 0;
+    }
+    to{
+        height:300px;
+    }
+}
+@keyframes slideUp {
+    from{
+        height: 300px;
+    }
+    to{
+        height:0;
+    }
+}
+.open{
+    animation: slideDown 0.5s forwards;
+}
+.close{
+    animation: slideUp 0.5s forwards;
+}
